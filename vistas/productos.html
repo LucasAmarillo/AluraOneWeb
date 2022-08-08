@@ -4,18 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Productos - Barbería Alura</title>
 </head>
 <body>
-  <header>
-    <h1>
-      <img src="../assets/img/logo.png" alt="Logo Barbería Alura"></h1>
-    <ul>
-      <li class="listaProductos">Inicio</li>
-      <li class="listaProductos">Productos</li>
-      <li class="listaProductos">Contactos</li>
-    </ul>
+  <header id="headerProductos">
+    <div class="caja"> <!-- tiene posicion estatica  -->
+      <h1><img src="../assets/img/logo.png" alt="Logo Barbería Alura"></h1>
+      <nav>
+        <ul class="listaProductos">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contactos">Contactos</a></li>
+        </ul>
+      </nav>
+  </div>
   </header>
+  <main>
+    <ul class="cartas">
+      <li>
+        <h2>Cabello</h2>
+        <img src="../assets/img/cabello.jpg" alt="">
+        <p class="productosDescripcion">Con Tijera o máquina, al gusto del cliente</p>
+        <p class="productosPrecio">$500</p>
+      </li>
+      <li><h2>Barba</h2>
+        <img src="../assets/img/barba.jpg" alt="">
+        <p class="productosDescripcion">Corte y deseño profesional de barba</p>
+        <p class="productosPrecio">$300</p>
+      </li>
+      <li><h2>Cabello + Barba</h2>
+        <img src="../assets/img/cabello+barba.jpg" alt="">
+        <p class="productosDescripcion">Paquete completo de cabello y barba</p>
+        <p class="productosPrecio">$700</p>
+      </li>
+    </ul>
+  </main>
+  <footer>
+      <img src="../assets/img/logo-blanco.png" alt="Logo Alura Blanco">
+      <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+  </footer>
 </body>
 </html>
