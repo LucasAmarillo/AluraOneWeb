@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css"/>
     <title>Productos - Barbería Alura</title>
-</head>
-<body>
-  <header id="headerProductos">
-    <div class="caja"> <!-- tiene posicion estatica  -->
-      <h1><img src="../assets/img/logo.png" alt="Logo Barbería Alura"></h1>
-      <nav>
-        <ul class="listaProductos">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contactos">Contactos</a></li>
-        </ul>
-      </nav>
-  </div>
-  </header>
-  <main>
-    <ul class="cartas">
-      <li>
-        <h2>Cabello</h2>
-        <img src="../assets/img/cabello.jpg" alt="">
-        <p class="productosDescripcion">Con Tijera o máquina, al gusto del cliente</p>
-        <p class="productosPrecio">$500</p>
-      </li>
-      <li><h2>Barba</h2>
-        <img src="../assets/img/barba.jpg" alt="">
-        <p class="productosDescripcion">Corte y deseño profesional de barba</p>
-        <p class="productosPrecio">$300</p>
-      </li>
-      <li><h2>Cabello + Barba</h2>
-        <img src="../assets/img/cabello+barba.jpg" alt="">
-        <p class="productosDescripcion">Paquete completo de cabello y barba</p>
-        <p class="productosPrecio">$700</p>
-      </li>
-    </ul>
-  </main>
-  <footer>
-      <img src="../assets/img/logo-blanco.png" alt="Logo Alura Blanco">
-      <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
-  </footer>
-</body>
+  </head>
+  <body>
+    <div class="main">
+    </div>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/cabello.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Cabello</h5>
+                <p class="card-text">Con tijera o máquina, a gusto del cliente</p>
+                <p class="card-text">$ 10.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/barba.jpg" class="card-img-top img" >
+              <div class="card-body">
+                <h5 class="card-title">Barba</h5>
+                <p class="card-text">Con tijera o máquina, a gusto del cliente</p>
+                <p class="card-text">$ 10.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/cabello+barba.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Cabello + Barba</h5>
+                <p class="card-text">Con tijera o máquina, a gusto del cliente</p>
+                <p class="card-text">$ 10.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container bg-dark text-center">
+        <img class="" src="../assets/img/logo-blanco.png" />
+        <p class="text-light">&copy Copyright Barbería Alura - 2020</p>
+      </div>
+    </footer>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
 </html>

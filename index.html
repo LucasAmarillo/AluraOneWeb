@@ -2,65 +2,99 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <title>Barberia Alura</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css"/>
+    <script src="assets/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header>
-      <h1 class="tituloPrincipal">Barbería Alura</h1>
-    </header>
-    <img id="banner" src="assets/img/banner.jpg" alt="banner Alura Barberia" />
-    <!-- para dividir el codigo  -->
-    <div class="principal">
-      <h2 class="tituloCentro">Sobre la Barbería Alura</h2>
-
-      <p>
-        Ubicada en el corazón de la ciudad,
-        <strong>la Barbería Alura</strong> trae para el mercado lo que hay de
-        mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es
-        destaque en la ciudad y conquista nuevos clientes diariamente.
-      </p>
-
-      <p id="mision">
-        <em
-          >Nuestra misión es:
-          <strong
-            >"Proporcionar autoestima y calidad de vida a nuestros
-            clientes".</strong
-          ></em
-        >
-      </p>
-
-      <p>
-        Ofrecemos profesionales experimentados que están constantemente
-        observando los cambios y movimiento en el mundo de la moda, para así
-        ofrecer a nuestros clientes las últimas tendencias. El atendimiento
-        posee un padrón de excelencia y agilidad, garantizando calidad y
-        satisfacción de nuestros clientes.
-      </p>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/banner.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link  active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="vistas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <div class="container mt-3">
+      <div class="principal">
+        <h2 class="text-center">
+          Sobre la Barbería Alura
+        </h2>
+        <p>
+          Ubicada en el corazón de la ciudad, la
+          <strong>Barbería Alura</strong> trae para el mercado lo que hay de
+          mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya
+          es destaque en la ciudad y conquista nuevos clientes diariamente.
+        </p>
+        <p id="mision">
+          <em
+            >Nuestra misión es:
+            <strong
+              >"Proporcionar autoestima y calidad de vida a nuestros
+              clientes"</strong
+            >.</em
+          >
+        </p>
+        <p>
+          Ofrecemos profesionales experimentados que están constantemente
+          observando los cambios y movimiento en el mundo de la moda, para así
+          ofrecer a nuestros clientes las últimas tendencias. El atendimiento
+          posee un padrón de excelencia y agilidad, garantizando calidad y
+          satisfacción de nuestros clientes.
+        </p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 mt-2">
+          <div class="card">
+            <h3>Diferenciales</h3>
+            <ul>
+              <ul>
+                <li class="items">Atención personalizada a los clientes</li>
+                <li class="items">Espacio diferenciado</li>
+                <li class="items">Localización</li>
+                <li class="items">Profesesionales calificados</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mt-2">
+          <div class="card">
+            <img class="img-fluid" src="diferenciales/diferenciales.jpg"/>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="diferenciales">
-      <h3 class="tituloCentro">Diferenciales</h3>
-      <ul class="listaDiferencial">
-        <li class="items">Atencion personalizada a los clientes</li>
-        <li class="items">Espacio diferenciado</li>
-        <li class="items">Localización</li>
-        <li class="items">Profesionales calificados</li>
-      </ul>
-      <img
-        src="assets/img/diferenciales.jpg"
-        alt=""
-        class="imagenDiferenciales"
-      />
-      <!-- para poner una imagen al aldo de texto  
-            la lista son block, las li hacen salto de linea y ocupan todo el espacio de pantalla
-
-        -->
-    </div>
+    <footer>
+      <div class="container bg-dark text-center mt-5">
+        <img class="" src="assets/img/logo-blanco.png" />
+        <p class="text-light">&copy Copyright Barbería Alura - 2020</p>
+      </div>
+    </footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
