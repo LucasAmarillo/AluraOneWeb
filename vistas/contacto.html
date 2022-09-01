@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <title>Productos - Barbería Alura</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <div class="col-xs-8">
+              <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="col-xs-4">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div> <!--fin collapse navbar-->
+            </div>
+          </div><!--fin container-fluid-->
+        </nav><!--fin nav-->
+      </div> <!--fin container-->
+      </div>
+  </header>
+  <main>
+    <div class="container">
+
+    <form>
+      <div class="mb-3 mx-auto">
+        <div class="col-md-4">
+          <label for="nombreApellido">Nombre y Apellido</label>
+          <input type="text" id="nombreApellido" class="form-control" required>
+          <label for="correo">Correo Electronico</label>
+          <input type="email" id="correo" class="form-control" required placeholder="email@dominio.com">
+          <label for="telefono">Telefono</label>
+          <input type="tel" id="telefono" class="form-control" required placeholder="xxx-xxx-xxx">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="" id="mensaje" cols="70" rows="10" class="form-control" required></textarea>
+        </div>
+      </div> 
+        <fieldset>
+            <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+            <!-- al poner name en radio se selecciona solo uno, para poner el radio antes que texto se pone en el label -->
+            <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                        
+            <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+                        
+            <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="Whatsapp" checked>Whatsapp</label>
+
+        </fieldset>
+        <!-- pára dejarlo relacionado con el label se ponde adentro
+            mobileinputtpes.com si es email aparece @ en el teclado etc
+        -->
+        <!-- fieldset todos lo itemen que esta estan relacionado es merjor semanticamente que los div , no usa la p para texto sino legend-->
+        <fieldset>
+            <legend>¿En que horario prefiere ser atendido?</legend>
+            <select>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+            </select>
+        </fieldset>
+        <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barbería Alura?</label><br>
+        <input type="submit" value="Enviar" class="btn btn-success mb-3 mt-3">
+    </form>
+    </div>
+    <!-- construccion de una tabla 
+        columnas son tr filas y dentro estan las celdas td
+        semanticas de tablas
+        A crear una tabla HTML.
+        La etiqueta table, representa la tabla.
+        La etiqueta tr, representa la fila de la tabla.
+        La etiqueta td, representa la celda de la tabla.
+        La etiqueta thead, representa el encabezado de la tabla.
+        La etiqueta tbody, representa el cuerpo de la tabla.
+        La etiqueta th, representa la celda del encabezado de la tabla.
+        La etiqueta tfoot, representa el pie de página de la tabla.
+    -->
+    <div class="container mt-4">
+      <table>
+          <!-- encabazado de la tabla -->
+          <thead>
+              <tr>
+                <th class="col text-center">Dia</th>
+                <th class="col">Horarios</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="p-2">Lunes</td>
+                  <td class="table-success">08h - 20h</td>
+              </tr>
+              <tr>
+                  <td class="p-2">Miercoles</td>
+                  <td class="table-danger" >08h - 20h</td>
+              </tr>
+              <tr>
+                  <td class="p-2">Viernes</td>
+                  <td class="table-warning">08h - 20h</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <div class="container bg-dark text-center">
+      <img class="" src="../assets/img/logo-blanco.png" />
+      <p class="text-light">&copy Copyright Barbería Alura - 2020</p>
+    </div>
+  </footer>
+  <script src="../assets/js/bootstrap.min.js"></script> src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
